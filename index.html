@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kafka Producer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="nav">
+      <div class="nav-header">
+
+      </div>
+    </nav>
+    <!-- content -->
+    <section class="container">
+      <h1>Kafka Producer - Using Netlify Function</h1><br/>
+      <p></p>
+      <form class="form">
+        
+        <div class="form-group">
+          <label for="formControlTextarea1">Enter Message to send to Kafka Broker</label>
+          <input type="text" class="form-control form-input" id="formControlTextarea1" placeholder="Example input">
+        </div>
+        <div><br/><button type="submit" class="btn btn-primary">Send to Kafka</button></div>
+        
+      </form>
+      <h2 class="result"></h2>
+      <h6 class="result1"></h6>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
