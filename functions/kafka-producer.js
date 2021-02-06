@@ -1,5 +1,4 @@
 const Kafka = require("node-rdkafka") 
-const { v4: uuidv4 } = require('uuid'); 
 
 const kafkaConf = {
     "group.id": "cloudkarafka-example",

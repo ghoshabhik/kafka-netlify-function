@@ -24,7 +24,7 @@ async function sendToKafka(msg) {
     
     input.value = ''
 
-    const { data1 } = await axios.get(`/api/kafka-consumer`)
+    //const { data1 } = await axios.get(`/api/kafka-consumer`)
   //   result1.innerHTML = `<div>
   //   <br/>
   //   <p>${data1}</p>
