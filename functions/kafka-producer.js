@@ -2,7 +2,7 @@ const Kafka = require("node-rdkafka")
 
 const kafkaConf = {
     "group.id": "cloudkarafka-example",
-    "metadata.broker.list": process.env.CLOUDKARAFKA_BROKERS.split(","),
+    "metadata.broker.list": "tricycle-01.srvs.cloudkafka.com:9094,tricycle-02.srvs.cloudkafka.com:9094,tricycle-03.srvs.cloudkafka.com:9094".split(","),
     "socket.keepalive.enable": true,
     "security.protocol": "SASL_SSL",
     "sasl.mechanisms": "SCRAM-SHA-256",
