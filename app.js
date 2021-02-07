@@ -7,6 +7,10 @@ const input = document.querySelector('.form-input')
 
 form.addEventListener('submit', (event) => {
   event.preventDefault()
+  result.innerHTML = `<div>
+      <br/>
+      <p>Waiting for backend API to respond</p>
+    </div>`
   const textContent = input.value
   if (textContent) {
     sendToKafka(textContent)
