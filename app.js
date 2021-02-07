@@ -15,11 +15,11 @@ form.addEventListener('submit', (event) => {
 
 async function sendToKafka(msg) {
   try {
-    const { data } = await axios.post(`/api/kafka-producer`, { msg })
-
+    const { data } = await axios.post(`https://lit-woodland-75674.herokuapp.com/producer`, { "message": msg })
+    console.log(data)
     result.innerHTML = `<div>
       <br/>
-      <p>The message "${data}" is sent to Kafka</p>
+      <p>The message "${data.message}" is sent to Kafka(id: "${data.id}")</p>
     </div>`
     
     input.value = ''
